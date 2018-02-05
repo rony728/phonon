@@ -4,7 +4,7 @@ sudo: required
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get -yqq install  cmake3 CMake-3.10.2, extra-cmake-modules glib qt5
+  - sudo apt-get -y -qq install cmake3 extra-cmake-modules libglib2.0-0 qt5-default
 
 install:
   - sh ./build.sh
